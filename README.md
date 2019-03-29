@@ -1,9 +1,9 @@
 
-# Lamby [![Build Status](https://travis-ci.org/customink/lamby.svg?branch=master)](https://travis-ci.org/customink/lamby)
+# Lamby [![Build Status](https://travis-ci.org/mrtnnk/martin-aws-lambda-ruby.svg?branch=master)]
 
 <img src="https://user-images.githubusercontent.com/2381/54278425-af365680-4568-11e9-972a-6b73e0a44bb5.jpg" alt="Lamby: Simple Rails & AWS Lambda Integration using Rack." align="right" /><h3>Simple Rails & AWS Lambda Integration using Rack</h3>
 
-The goal of this project is to provide minimal code to convert API Gateway `event` and `context` objects into Rack events for your Rails application in a Lambda handler. Most everything else is [documentation](https://github.com/customink/lamby/issues?q=is%3Aissue+is%3Aopen+label%3Adocs+sort%3Acreated-asc).
+The goal of this project is to provide minimal code to convert API Gateway `event` and `context` objects into Rack events for your Rails application in a Lambda handler.
 
 ```ruby
 def handler(event:, context:)
@@ -67,32 +67,9 @@ $ echo '/vendor/bundle' >> .gitignore
 
 To run your Lambda locally or deploy it, please read the following docs.
 
-* [Installing AWS CLI and AWS SAM](https://github.com/customink/lamby/issues/18)
-* [Bin Scripts - Setup, Build, Server, & Deploy](https://github.com/customink/lamby/issues/17)
-
 ## Additional Documentation
 
 In order to provide minimal code and ultimate flexibility for any type of Rails application on Lambda, optional or advanced features require that you write additional CloudFormation code or perform AWS Console actions to get the desired results.
-
-To that end, we are using our GitHub issues along with the `[docs]` label as a project-focused Stack Overflow where we encourage you to participate in and ask questions. Here are a few high level docs now that may interests most users. Also, [browse all docs](https://github.com/customink/lamby/issues?q=is%3Aissue+is%3Aopen+label%3Adocs) or open a new `[question]` issue and we would be glad to help!
-
-#### Local AWS Dependencies
-
-* [Installing AWS CLI and AWS SAM](https://github.com/customink/lamby/issues/18)
-* [Bin Scripts - Setup, Build, Server, & Deploy](https://github.com/customink/lamby/issues/17)
-
-#### Other Guides Just For You!
-
-* [Environments & Configuration](https://github.com/customink/lamby/issues/28)
-* [Asset Hosts & Precompiling](https://github.com/customink/lamby/issues/29)
-* [Custom Domain Name, Edge/Regional, & CloudFront](https://github.com/customink/lamby/issues/10)
-* [API Gateway Permissions & CloudWatch Logs](https://github.com/customink/lamby/issues/6)
-* [How Does Lamby Work?](https://github.com/customink/lamby/issues/12)
-* [Performance & Real World Usage](https://github.com/customink/lamby/issues/16)
-* [Database Connections](https://github.com/customink/lamby/issues/13)
-* [Basic Ruby with Lambda & AWS SAM](https://github.com/customink/lamby/issues/14)
-* [Docker Perf on Mac & Root Proxy SAM Bugs](https://github.com/customink/lamby/issues/15)
-
 
 ## About AWS SAM and CloudFormation
 
@@ -106,9 +83,4 @@ AWS SAM is shorthand for the [Serverless Application Model](https://github.com/a
 
 After checking out the repo, run `./bin/setup` to install dependencies. Then, run `./bin/test` to run the tests. **NOTE: There are no tests now but adding them is on our TODO list.**
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/customink/lamby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-
-## Code of Conduct
-
-Everyone interacting in the Lamby project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/metaskills/lamby/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/mrtnnk/martin-aws-lambda-ruby. This project is intended to be a safe, welcoming space for collaboration.
